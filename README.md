@@ -26,6 +26,7 @@ The Design were created to yhe following widths:
 
 ### Font 
 - [Karla](https://fonts.google.com/specimen/Karla?preview.text_type=custom)
+- [Pragmatica-Light](https://fonts.adobe.com/fonts)
 - Weights: 400, 700
 
 
