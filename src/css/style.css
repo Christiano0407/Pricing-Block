@@ -1,13 +1,21 @@
-*, *::before, *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
 html {
-    font-size: 62.5%;
     box-sizing: border-box;
-}
-:root {
+    font-size: 100%;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.3;
+    background-color: var(--ltgray);
+    color: var(--grayblue);
+    padding: var(--paddingX);
+  }
+  
+  :root {
     --white: hsl(0, 0%, 100%);
     --cyan: hsl(179, 62%, 40%);
     --ltcyan: hsl(179, 62%, 45%);
@@ -17,39 +25,37 @@ html {
     --grayblue: hsl(218, 22%, 67%);
     --paddingX: 1.8rem;
     --paddingY: 1.5rem;
-}
-
-body {
-    font-family: pragmatica,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {  
     font-weight: bold;
     margin-top: 0;
     line-height: 1.15;
-}
-h2 {
+  }
+  
+  h2 {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
-}
-p {
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  p {
     margin-top: 0;
-}
-
-.price {
+  }
+  
+  .price {
     border-radius: 0.5rem;
     overflow: hidden;
     max-width: 40rem;
     margin: auto;
   }
-  
   /*Mediaquerie*/
   @media only screen and (min-width: 62.5em){
   
@@ -64,7 +70,7 @@ p {
     }
   }
   
-  /*Continue*/
+  /*continue*/
   .price > * {
     padding: var(--paddingX) var(--paddingY);
   }
@@ -132,16 +138,18 @@ p {
   .subscription a:hover {
     background-color: var(--dkyellow);  
   }
-
+  
   .why {
-      background-color: var(--ltcyan);
+    background-color: var(--ltcyan);
   }
+  
   .why ul {
-      margin-top: 0;
-      padding: 0;
+    margin-top: 0;
+    padding: 0;
   }
+  
   .why ul li {
-      list-style-type: none;
-      font-size: 0.85rem;
-      margin-bottom: 0.2rem;
+    list-style-type: none;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
   }
